@@ -1,0 +1,29 @@
+.topbanner {
+    width: 100%;
+    height: 30px;
+    background-image: url("/pictures/topbanner.jpg")
+}
+
+
+.menubanner {
+
+    width: 100%;
+    height: 150px;
+    background: white;
+
+}
+.purplecontainer {
+
+    width: 100%;
+    height: 400px;
+    background-image: url("/pictures/purple.jpg")
+
+}
+
+
+.middlecontainer {
+    width: 1000px;
+    height: 1000px;
+    background-color: lightpink;
+    margin: 100px auto;
+}
