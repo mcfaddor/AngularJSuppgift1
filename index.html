@@ -3,7 +3,7 @@
 
 <head>
     <!--Title-->
-    <title> Page Title </title>
+    <title> Angular JS Uppgift 1 </title>
 
     <!--Meta-->
     <meta charset="utf-8" />
@@ -24,52 +24,102 @@
 </head>
 
 <body>
-
+    
     <div class="topbanner">
-        <button><i class="fab fa-facebook-f"></i></button>
-        <button><i class="fab fa-twitter"></i></button>
-        <button></button>
-        <button><i class="fab fa-pinterest"></i></button>
-        <button><i class="fab fa-youtube"></i></button>
-        <button>FAQ</button>
-        <button>TERMS</button>
-
+        <ul>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-behance-square">
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-youtube"></i>
+                FAQ
+                TERMS
+        </ul>
     </div>
 
     <div class="menubanner"></div>
+
+
+
+
     <div class="purplecontainer">
         <h3>DIGITAL MARKETING</h3>
         <h1>PRODUCT STORE</h1>
         <P>Home | Shop</P>
     </div>
 
+    <div class="container">
 
-    <div class="middlecontainer">
-
-
-
-
-<div class="infobox">
-    <div class="infoboxIcons"> <i class="fas fa-truck"></i><h3>Free Shipping</h3> <p>Orders over $100</p></div>
-    <div class="infoboxIcons"><i class="far fa-clock"></i><h3>Free Return</h3><p>In 30 days</p></div>
-    <div class="infoboxIcons"><i class="fas fa-lock-open"></i><h3>100% Secure</h3><p>Shipping</p></div>
-    <div class="infoboxIcons"><i class="fas fa-tag"></i><h3>Best Price</h3><p>Granted</p></div>
-
-
-</div>
+        <div class="middlecontainer">
 
 
 
 
+            <div class="infobox">
+                <div class="infoboxIcons"> <i class="fas fa-truck"></i>
+                    <h3>Free Shipping</h3>
+                    <p>Orders over $100</p>
+                </div>
+                <div class="infoboxIcons"><i class="far fa-clock"></i>
+                    <h3>Free Return</h3>
+                    <p>In 30 days</p>
+                </div>
+                <div class="infoboxIcons"><i class="fas fa-lock-open"></i>
+                    <h3>100% Secure</h3>
+                    <p>Shipping</p>
+                </div>
+                <div class="infoboxIcons"><i class="fas fa-tag"></i>
+                    <h3>Best Price</h3>
+                    <p>Granted</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="PictureMenu">
+                <div class="menubuttons" id="dots"></div>
+                <div class="menubuttons" id="lines"><i class="fas fa-bars"></i></div>
+                <p>Showing 1-12 of 30 results</p>
+
+                <select placeholder="Sort by">
+                    <option value="volvo">Sort by</option>
+                </select>
+                <div class="search"><input type="text" placeholder="Search from here..."><i class="fas fa-search"></i>
+                </div>
+
+            </div>
+
+
+            <div class="rowPictures">
+                <div class="col" id="1"></div>
+                <div class="col" id="2"></div>
+                <div class="col" id="3"></div>
+            </div>
+
+            <div class="rowInfo">
+                <div class="col" id="1">
+                    <h3>Helix Stereo Colorful T-Shirt</h3>
+                    <p>$500.00</p>
+                    <div id="yellowStar"><i class="fas fa-star"></i></div>
+                    <div id="yellowStar"><i class="fas fa-star"></i></div>
+                    <div id="yellowStar"><i class="fas fa-star"></i></div>
+                    <div id="yellowStar"><i class="fas fa-star"></i></div>
+                    <div id="yellowStar"><i class="fas fa-star"></i></div>
+                </div>
+
+                <div class="col" id="2"></div>
+                <div class="col" id="3"></div>
+            </div>
 
 
 
+        </div>
+
+        <div class="footer"></div>
 
 
     </div>
-
-
-
 
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -79,6 +129,11 @@
 
     <!--Javascript-->
     <script src="js/main.js"></script>
+
+
+
+
+
 </body>
 
 </html>
