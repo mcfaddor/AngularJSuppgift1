@@ -111,7 +111,7 @@ body {
 }
 
 .PictureMenu {
-   
+   /* background: white; */
     display: flex;
     height: 100px;
     width: 1170px;
@@ -126,15 +126,17 @@ body {
 
 .PictureMenuRight {
     display: flex;
-   width: 670px;
+   width: 680px;
 }
 
 .PictureMenuRight p {
+    width: 250px;
     margin-top: 20px;
-    margin-right: 30px;
+    margin-right: 5x;
     margin-bottom: 0px;
     color: #788892;
-    font-family: 'Rubik'
+    font-family: 'Rubik';
+    font-size: 14px;
     
 }
 
@@ -144,18 +146,19 @@ body {
     -webkit-appearance: none;
     background-image: url(../pictures/angle-down-solid.svg);
     background-repeat: no-repeat;
+    background-size: 15px;
     border: 1px solid #cccccc;
     border-radius: 25px;
     margin-right: 20px;
     font-family: 'Rubik';
+    font-size: 14px;
     text-align: center;
     font-size: 0.8rem;
     width: 144px;
-    height: 56px;
+    height: 54px;
     color: #cccccc;
-
-    
 }
+
 
 .search {
     
@@ -163,18 +166,25 @@ body {
     -webkit-appearance: none;
     background-image: url(../pictures/);
     background-repeat: no-repeat;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
     font-family: 'Rubik';
     text-align: center;
     text-decoration: none;
     font-size: 0.8rem;
-    width: 250px;
-    height: 56px;
+    width: 280px;
+    height: 54px;
     color: #cccccc;
 }
 
-.searchdiv {
-    border: 1px solid #cccccc;
-    border-radius: 25px;
+input {
+    border-style:none;
+    margin-top: 20px;
+}
+
+input[type=text] {
+    font-family: 'Rubik';
+    font-size: 14px;
 }
 
 
