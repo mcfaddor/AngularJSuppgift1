@@ -97,9 +97,74 @@ body {
 }
 
 #box2 {
-    width: 170px;
-    padding-left: 60px;
+    width: 350px;
 }
+
+.box2p {
+    width: 200px;
+    height: 50px;
+    margin-top: 0px;
+}
+
+.box2buttons {
+    display: flex;
+    margin: 8px 0 5px 80px;
+}
+
+
+
+.sectionsSquares p {
+ 
+    font-family: 'Rubik';
+    font-weight: bold;
+    font-size: 12px;
+    width: 170px;
+    height: 40px;
+    color: white;
+    background-color: #ff8155;
+    border-radius: 30%;
+    padding-left: 0px;
+    margin-left: 15px;
+    
+    padding: 10px;
+}
+
+#box3 {
+
+    width: 650px;
+    border: 1px solid black;
+    font-family: 'Rubik';
+    list-style: none;
+    padding-left: 40px;
+}
+
+
+.sectionsSquares ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 75px;
+    overflow: hidden;
+  }
+  
+  .sectionsSquares li {
+    float: left;
+  }
+  
+  .sectionsSquares li a {
+    display: block;
+    color: #0e1b33;
+    padding: 15px 24px 15px 15px;
+    text-decoration: none;
+  }
+  
+  .sectionsSquares li a:hover {
+    color:#0e1b33;
+  }
+
+
+
+
+
 
 
 
@@ -275,7 +340,7 @@ body {
 
 .sortby {
     margin: 10px auto;
-    text-align: center; 
+    text-align: ce nter; 
 }
 
 .PictureMenuRight select {
