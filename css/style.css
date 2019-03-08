@@ -532,3 +532,29 @@ body {
     margin: 0px;
     /* background-image: url("/pictures/footer.png") */
 }
+
+.footercontainer {
+    /* background-color: white; */
+    display: flex;
+    width: 1180px;
+    height: 609px;
+    margin-bottom: 0px;
+    margin: 0px auto;
+    border: 1px solid white;
+}
+
+
+.section1 {
+    border: 1px solid white;
+    width: 393px;
+}
+
+.section2 {
+    border: 1px solid white;
+    width: 393px;
+}
+
+.section3 {
+    border: 1px solid white;
+    width: 393px;
+}
