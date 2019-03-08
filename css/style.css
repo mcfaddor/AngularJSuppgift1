@@ -44,6 +44,62 @@ body {
 }
 
 
+.menucontainer ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 40px;
+  }
+  
+  .menucontainer li {
+    float: left;
+  }
+  
+  .menucontainer li a {
+    display: block;
+    color: white;
+    padding: 6px 0px 15px 9px;
+    margin-right: 6px;
+    text-decoration: none;
+  }
+  
+  .menucontainer li a:hover {
+    color:#0e1b33;
+  }
+
+  #faqTerms {
+      border: 1px solid black;
+      margin-left: 32px;
+      width: 150px;
+      height: 40px;
+      font-family: 'Rubik';
+      font-size: 15px;
+      font-weight: bold;
+  }
+
+  #faqTerms li a {
+      margin-right: 20px;
+  }
+
+.mailinfo {
+    
+    float: right;
+    align-content: right;
+    border: 1px solid black;
+    width: 1089px;
+    height: 40px;
+    
+    font-family: 'Rubik';
+    font-size: 15px;
+    color: white;
+}
+
+.mailinfo p {
+    margin-right: 6px;
+    margin-top: 7px;
+    text-align: right;
+}
 
 
 /* ------------------ SECTION 2 STARTS HERE ------------------ */
