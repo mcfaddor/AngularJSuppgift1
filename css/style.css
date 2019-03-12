@@ -200,7 +200,7 @@ body {
   
   .sectionsSquares li {
     float: left;
-    margin-right: 25px;
+    margin-right: 2px;
   }
   
   .sectionsSquares li:nth-child(6) {
