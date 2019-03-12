@@ -29,9 +29,11 @@
 body {
     background-image: url("20_shop.png");
     background-repeat: no-repeat;
+    background-size: cover;
     width: 1920px;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 /* ------------------ SECTION 1 STARTS HERE ------------------ */
@@ -448,13 +450,14 @@ body {
 
 }
 
-
+.search {
+    margin-right: 0px;
+}
 
 .searchText {
     display: grid;
     width: 250px;
     height: 54px;
-    margin: auto;
     place-items: center;
 }
 
@@ -478,7 +481,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 0.8rem;
-    width: 280px;
+    width: 250px;
     height: 54px;
     color: #cccccc;
     
@@ -487,6 +490,8 @@ body {
 
 
 /* ------------------ SECTION 6 STARTS HERE ------------------ */
+
+
 
 .PictureMenu img {
     height: 20px;
@@ -534,8 +539,6 @@ body {
     width: 100%;
     height: 609px;
     border: 2px solid red;
-    padding: 0p;
-    margin: 0px;
     /* background-image: url("/pictures/footer.png") */
 }
 
