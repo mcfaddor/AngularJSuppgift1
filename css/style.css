@@ -554,7 +554,6 @@ body {
 
 
 .section1 {
-    border: 1px solid red;
     width: 393px;
     height: 610px;
     padding-top: 96px;
@@ -649,9 +648,7 @@ table {
     height: 280px;
 }
 
-
 .section3 {
-    border: 1px solid red;
     width: 393px;
     height: 610px;
 }
@@ -709,4 +706,26 @@ table {
     padding-left: 19px;
     font-size: 13px;
     font-family: 'Rubik';
+}
+
+.top {
+    margin-top: 70px;
+    margin-left:190px;
+    width: 200px;
+    height: 50px;
+    background-color: #15ee90;
+    border-radius: 30px;
+}
+
+  #topbutton p {
+    font-family: 'Rubik';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 50px;
 }
