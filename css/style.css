@@ -192,24 +192,14 @@ body {
 
 .sectionsSquares ul {
     list-style-type: none;
-<<<<<<< HEAD
     margin-left: 125px;
     margin-top: 10px;
-=======
-    margin-top: 10px;
-    margin-left: 10px;
-    padding-left: 70px;
->>>>>>> footer
     overflow: hidden;
   }
   
   .sectionsSquares li {
     float: left;
-<<<<<<< HEAD
     margin-right: 22px;
-=======
-    margin-right: 2px;
->>>>>>> footer
   }
 
 
@@ -221,10 +211,6 @@ body {
   .sectionsSquares li a {
     display: block;
     color: #0e1b33;
-<<<<<<< HEAD
-=======
-    margin-right: 5px;
->>>>>>> footer
     text-decoration: none;
   }
   
@@ -256,12 +242,7 @@ body {
     font-size: 12px;
     width: 170px;
     height: 60px;
-<<<<<<< HEAD
     color: white;
-=======
-    color: #fff;
-    
->>>>>>> footer
     margin: 0px auto;
     text-align: center;
     padding-top: 20px;
