@@ -541,8 +541,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 609px;
-    border: 2px solid red;
-    /* background-image: url("/pictures/footer.png") */
+    background-image: url("/pictures/footer.png")
 }
 
 .footercontainer {
@@ -551,14 +550,13 @@ body {
     width: 1180px;
     height: 609px;
     margin: 0px auto;
-    border: 1px solid #fff;
 }
 
 
 .section1 {
-    border: 1px solid #fff;
+    border: 1px solid red;
     width: 393px;
-    height: 500px;
+    height: 610px;
     padding-top: 96px;
     padding-left: 3px;
 }
@@ -573,16 +571,20 @@ body {
     color: #A9B2C0;
     font-family: 'Rubik';
     font-size: 14px;
-    line-height: 28px;
-    padding-top: 35px;
-    padding-left: 10px;
+    line-height: 25px;
+    height: 145px;
+    width: 320px;
+}
+
+.copyright {
+    margin-top: 200px;
 }
 
 .section1 ul {
     list-style-type: none;
+    padding: 0px;
   }
 
-  
   .section1 li {
     position: relative;
     float: left;
@@ -620,23 +622,9 @@ body {
   }
 
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
 .section2 {
-    border: 1px solid #fff;
     width: 393px;
-    height: 500px;
+    height: 610px;
 }
 
 .section2 h5 {
@@ -646,6 +634,10 @@ body {
     font-family: 'Rubik';
     font-weight: bolder;
     
+}
+
+.orange {
+    color: #ff8155;
 }
 
 table {
@@ -659,33 +651,62 @@ table {
 
 
 .section3 {
-    border: 1px solid #fff;
+    border: 1px solid red;
     width: 393px;
-    height: 500px;
+    height: 610px;
 }
 
-.section3 h5 {
+.section2 h4 {
     color: #fff;
-    padding-top: 99px;
     padding-left: 14px;
+    margin-top: 100px;
+    padding-bottom: 30px;
     font-family: 'Rubik';
     font-weight: bolder;
 }
 
-.newsfeedcontainer {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
+
+
+.newsfeedcontainer1 {
+    display: flex;
+    width: 390px;
+    height: 90px;
 }
 
 .footerpicture {
     padding-left: 15px;
-   
-    border: 1px solid black;
     width: 110px;
-    height: 73px;
+    height: 90px;
 }
 
+
 .footerpicturetext {
-    
+    width: 100%;
+    height: 90px;
+}
+
+.section3 h4 {
+    color: #fff;
+    padding-left: 14px;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    font-family: 'Rubik';
+    font-weight: bolder;
+}
+
+
+
+.section3 h5 {
+    color: #fff;
+    padding-left: 19px;
+    font-size: 18px;
+    font-family: 'Rubik';
+    font-weight: bolder;
+}
+
+.section3 p {
+    color: #fff;
+    padding-left: 19px;
+    font-size: 13px;
+    font-family: 'Rubik';
 }
