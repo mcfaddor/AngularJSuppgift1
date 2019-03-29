@@ -21,7 +21,7 @@
 
     <!--Angular.js-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
 </head>
 
 
@@ -149,15 +149,16 @@
         <div class="PictureMenu">
 
             <div class="PictureMenuLeft">
-                <button class="menubuttons"><img src="/pictures/dots.svg"></button>
-                <button class="menubuttons" id="stripes"><i class="fas fa-bars"></i></buttons>
+                <button class="menubuttons" id="dots"> <a href="#!card"><img src="/pictures/dots.svg"></button></a>
+                <button class="menubuttons" id="stripes"><a href="#!list"><i class="fas fa-bars"></i></buttons></a>
             </div>
+
 
             <div class="PictureMenuRight">
                 <select id="showing" data-ng-model="rowLimits">
                     <option>Showing 1-12 of 30 results</option>
                     <option value="5">5</option>
-                    <option value="10 selected">10</option>
+                    <option value="10">10</option>
                     <option value="20">20</option>
                     <option value="50">50</option>
                     <option value="100">100</option>
@@ -184,32 +185,9 @@
         </div>
 
 
-<!-- 
-        <div class="cardcontainer">
 
-            <div class="card-deck" data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
-                <div class="card">
-    
-                    <img data-ng-src="{{ product.image_urls }}">
-    
-                    <div class="card-body">
-                        <h5>{{ product.productname }}</h5>
-                        <p>{{ product.author }}</p>
-                        <span class="money">
-                            <p>{{ product.price }}</p>
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> 
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-    
-                </div>
-            </div>
-    
-        </div>
-     -->
+     <div data-ng-view></div>
 
-     <div ng-view></div>
-     
 
         <div class="booksfooter">
 
@@ -356,7 +334,6 @@
 
     </div>
 
-    <!--Javascript-->
 
 
     <!--JQuery-->

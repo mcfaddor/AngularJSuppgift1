@@ -437,7 +437,7 @@ body {
     background-image: url('/pictures/angle-down-solid.svg');
     background-repeat: no-repeat;
     background-size: 10px;
-    background-position: 95px center;
+    background-position: 120px center;
     border: 1px solid #cccccc;
     border-radius: 25px;
     margin-right: 10px;
@@ -583,11 +583,14 @@ td {
  
 .card p {
     margin: 0px;
+    
 }
 
 .money {
+    float: left;
     font-family: 'Rubik';
     color: #ff8155;
+    
     }
 
 .stars {

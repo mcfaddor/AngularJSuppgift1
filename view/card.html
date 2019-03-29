@@ -1,8 +1,5 @@
 
-
-<body data-ng-app="angularApp">
-
-    <div class="cardcontainer" data-ng-controller="userController">
+    <div class="cardcontainer">
 
         <div class="card-deck" data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
             <div class="card">
@@ -14,7 +11,7 @@
                     <p>{{ product.author }}</p>
                     <span class="money">
                         <p>{{ product.price }}</p>
-                    </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> 
+                    </span> <p><span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> 
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
                 </div>

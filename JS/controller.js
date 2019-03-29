@@ -1,5 +1,27 @@
 
-var app = angular.module("angularApp", []);
+var app = angular.module("angularApp", ['ngRoute']);
+
+app.config(['$routeProvider', function($routeProvider){
+
+    $routeProvider
+    .when('/', {
+        templateUrl: 'view/cards.html'
+    })
+    .when('/card', {
+        templateUrl: 'view/card.html', 
+        controller: 'userController'
+    })
+    .when('/list', {
+        templateUrl: 'view/list.html',
+        controller: 'userController'
+    })
+    .otherwise({
+        redirectionTo: '/'
+    })
+
+}]);
+
+
 
 app.controller("userController", function($scope) {
 
@@ -19,8 +41,5 @@ app.controller("userController", function($scope) {
         { image_urls: "../pictures/12.jpg" ,productname: "Pauls kök : en grönare matfilosofi", author: "Paul Svensson", category: "Mat & dryck", Typ: "Inbunden", price: 119 , instock : 10  }
     ];
     $scope.products = products;
-    $scope.rowLimits = 12;
-    $scope.sortColumn = "productname", "price", "category";
-
 
 });
