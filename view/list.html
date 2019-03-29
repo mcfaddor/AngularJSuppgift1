@@ -1,0 +1,46 @@
+
+
+<body ng-app="angularApp" ng-controller="userController">
+
+    <table>
+            <thead>
+                    <tr>
+                        <th class="pointer" ng-click="sortData('image')">
+                            Image 
+                            <div ng-class="getSortClass('image')"></div> 
+                        </th>
+                        <th class="pointer" ng-click="sortData('title')">
+                             Title  
+                            <div ng-class="getSortClass('title')"></div>
+                        </th>
+                        <th class="pointer" ng-click="sortData('author')">
+                                Author
+                               <div ng-class="getSortClass('author')"></div>
+                           </th>
+                        <th class="pointer" ng-click="sortData('category')">
+                            Category
+                            <div ng-class="getSortClass('category')"></div>
+                        </th>
+                        <th class="pointer" class="center-text" ng-click="sortData('price')">
+                            Price
+                            <div ng-class="getSortClass('price')"></div>
+                        </th>
+                        <th class="pointer"  ng-click="sortData('instock')">
+                            In stock
+                            <div ng-class="getSortClass('instock')"></div>
+                        </th>
+                    </tr>
+                </thead>
+        <tbody>
+            <tr data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
+                <td><img src="{{ product.image_urls }}" class="card-img-top" alt=""></td>
+                <td>{{ product.productname }}</td>
+                <td>{{ product.author }}</td>
+                <td>{{ product.category | uppercase }}</td>
+                <td>{{ product.price | currency: "KR " }}</td>
+                <td>{{ product.instock | number }}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>

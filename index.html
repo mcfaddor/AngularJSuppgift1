@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="sv-SE">
+<html lang="sv-SE" data-ng-app="angularApp" data-ng-controller="userController">
 
 <head>
     <!--Title-->
-    <title> Angular JS Uppgift 1 </title>
+    <title> Angular JS Uppgift </title>
 
     <!--Meta-->
     <meta charset="utf-8" />
@@ -20,8 +20,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
     <!--Angular.js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js>"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+
 </head>
+
+
 
 <body>
 
@@ -151,18 +154,27 @@
             </div>
 
             <div class="PictureMenuRight">
-
-                <p>Showing 1-12 of 30 results</p>
+                <select id="showing" data-ng-model="rowLimits">
+                    <option>Showing 1-12 of 30 results</option>
+                    <option value="5">5</option>
+                    <option value="10 selected">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
 
                 <div class="sortby">
-                    <select id="text">
+                    <select data-ng-model="sortColumn">
                         <option>Sort by</option>
+                        <option value="productname">Productname</option>
+                        <option value="price">Price</option>
+                        <option value="category">Category</option>
                     </select>
                 </div>
 
                 <div class="search">
                     <div class="searchText">
-                        <input type="text" placeholder="Search from here....">
+                        <input type="text" placeholder="Search from here...." data-ng-model="searchText">
                     </div>
                 </div>
 
@@ -172,195 +184,32 @@
         </div>
 
 
-
-
-
-
-
+<!-- 
         <div class="cardcontainer">
 
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
+            <div class="card-deck" data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
                 <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
+    
+                    <img data-ng-src="{{ product.image_urls }}">
+    
                     <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
+                        <h5>{{ product.productname }}</h5>
+                        <p>{{ product.author }}</p>
                         <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
+                            <p>{{ product.price }}</p>
+                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> 
+                            <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
                     </div>
+    
                 </div>
             </div>
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="card-deck" style="background-color: rgba(170, 96, 184, 0.8)">
-                <div class="card">
-                    <img src="/pictures/picture.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5>Helix Stereo Colorful T-Shirt</h5>
-                        <span class="money">
-                            <p>$500.00
-                        </span> <span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
-                                class="fas fa-star"></i>
-                            <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
-                    </div>
-                </div>
-            </div>
-
-
+    
         </div>
+     -->
+
+     <div ng-view></div>
+     
 
         <div class="booksfooter">
 
@@ -379,9 +228,6 @@
             </button>
             <button class="numberbutton"><i class="fas fa-arrow-right"></i></button>
         </div>
-
-
-
 
     </div>
 
@@ -424,29 +270,29 @@
 
                 <table>
                     <tr>
-                        <th>Paid SEO</th>
-                        <th>Services</th>
+                        <th><a href="#">SEO</a></th>
+                        <th><a href="#">Services</a></th>
                     </tr>
                     <tr>
-                        <th>Digital Marketing</th>
-                        <th>Our Team</th>
+                        <th><a href="#">Digital Marketing</a></th>
+                        <th><a href="#">Our Team</a></th>
                     </tr>
 
                     <tr>
-                        <th>Strategy Planning</th>
-                        <th>News</th>
+                        <th><a href="#">Strategy Planning</a></th>
+                        <th><a href="#">News</a></th>
                     </tr>
                     <tr>
-                        <th>Offline SEO</th>
-                        <th>Shop</th>
+                        <th><a href="#">Offline SEO</a></th>
+                        <th><a href="#">Shop</a></th>
                     </tr>
                     <tr>
-                        <th>Page Rank Up</th>
-                        <th>Contact Us</th>
+                        <th><a href="#">Page Rank Up</a></th>
+                        <th><a href="#">Contact Us</a></th>
                     </tr>
                     <tr>
-                        <th>User Panel</th>
-                        <th>Book Appointment</th>
+                        <th><a href="#">User Panel</a></th>
+                        <th><a href="#">Book Appointment</a></th>
                     </tr>
                 </table>
 
@@ -493,7 +339,6 @@
                 </div>
 
 
-
                 <div id="topbutton">
                     <button class="top">BACK TO TOP</button>
                 </div>
@@ -511,6 +356,8 @@
 
     </div>
 
+    <!--Javascript-->
+
 
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -518,12 +365,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
-    <!--Javascript-->
-    <script src="js/main.js"></script>
-
-
-
-
+    <script src="JS/controller.js"></script>
 
 </body>
 
