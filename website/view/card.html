@@ -10,10 +10,11 @@
                     <h5>{{ product.productname }}</h5>
                     <p>{{ product.author }}</p>
                     <span class="money">
-                        <p>{{ product.price }}</p>
-                    </span> <p><span class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> 
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> <i class="fas fa-star"></i></span></p>
+                        <p>{{ product.price }} kr</p>
+                    </span> 
+                    <div class="stars-outer ml-5">
+                        <div class="stars-inner" ng-style="{ 'width': rating(product.rating) }"></div>
+                    </div>
                 </div>
 
             </div>

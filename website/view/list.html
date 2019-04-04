@@ -25,7 +25,14 @@
                             In stock
                             <div ng-class="getSortClass('instock')"></div>
                         </th>
+                        <th class="pointer"  ng-click="sortData('rating')">
+                            Rating
+                            <div class="stars-inner" ng-click="{ 'width': rating(product.rating) }"></div>
+                        </th>
                     </tr>
+
+                    <div ></div>
+
                 </thead>
         <tbody>
             <tr data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
