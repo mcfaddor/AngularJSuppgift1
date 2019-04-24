@@ -27,9 +27,6 @@
 }
 
 body {
-    /* background-image: url("20_shop.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
     width: 1920px;
     margin: 0px;
     padding: 0px;
@@ -97,20 +94,51 @@ body {
 }
 
 .mailinfo p {
-    margin-right: 6px;
+    float: right;
+    padding-right: 130px;
     margin-top: 7px;
     text-align: right;
+}
+
+.topbanner .dropdown {
+    float: right;
+    padding-right: 100px;
+}
+
+.btn {
+    float: right;
+    margin-right: 60px;
+    margin-top: 5px;
+    padding-top: 4px;
+    width: 110px;
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    color: #fff;
+    background-color: #ff8155;
+}
+
+.mailinfo .dropdown-menu {
+    float: left;
+    width: 500px;
+    background-color:#fff;
+    margin-top: 15px;
+    padding: 30px;
+
 }
 
 
 /* ------------------ SECTION 2 STARTS HERE ------------------ */
 
 .menubanner {
+    
     position: relative;
     width: 1920px;
     height: 140px;
     background-color: #fff;
 }
+
 
 .menucontainer {
     display: flex;
@@ -178,14 +206,14 @@ body {
     margin: 0px auto;
     text-align: center;
     padding: 10px;
+
 }
 
-#box3 {
 
-    width: 650px;
+#box3 {
+    width: 600px;
     font-family: 'Rubik';
     list-style: none;
-    
 }
 
 
@@ -198,14 +226,9 @@ body {
   
   .sectionsSquares li {
     float: left;
-    margin-right: 22px;
+    margin-right: 0px;
   }
 
-
-  
-  .sectionsSquares li:nth-child(6) {
-      margin-right: 0px;
-  }
 
   .sectionsSquares li a {
     display: block;
@@ -218,37 +241,62 @@ body {
   }
 
 
-  #box4 {
-    
-    position: relative;
+
+#box4 {
     width: 245px;
 }
 
+#box4 .quote ul {
+    left:0;
+}
+
+#box4 .quote ul li {
+    padding: 0px;
+    margin: 0px;
+}
+
 .quote {
-    
-    margin-left:25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 60px;
     background-color: #ff8155;
     border-radius: 30px;
-}
-
-  #box4 p {
-    
-    position: relative;
-    font-family: 'Rubik';
-    font-weight: bold;
-    font-size: 12px;
-    width: 170px;
-    height: 60px;
-    color: white;
-    margin: 0px auto;
-    text-align: center;
-    padding-top: 20px;
+    border: none;
 }
 
 
+.totalprice {
+    text-align: right;
+}
 
+.modal-footer {
+    justify-content: center;
+}
+
+.itemcontainer {
+    width: 800px;
+}
+
+.shoppingcontainer .remove-item {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.shoppingcontainer table {
+    width: 766px;
+    height: 100px;
+}.shoppingcontainer table td {
+    padding: 5px;
+}
+
+.shoppingcontainer img {
+    height: 57px;
+    width: 57px;
+}
 
 
 
@@ -560,6 +608,7 @@ td {
     justify-content: space-between;
     margin: 10px 0px 50px 0px;
     width: 355px;
+    height: 600px;
 }
 
 .card-deck .card {
@@ -574,6 +623,7 @@ td {
     height: 390px;
 }
 
+
 .card h5 {
     color: #0e1b33;
     padding-top: 15px;
@@ -582,22 +632,42 @@ td {
  
 .card p {
     margin: 0px;
-    
+}
+
+.titlecontainer {
+    padding-bottom: 20px;
+}
+
+.quantity {
+    width: 70px;
 }
 
 .money {
     float: left;
     font-family: 'Rubik';
     color: #ff8155;
-    
+    }
+
+.starscontainer {
+    display: flex;
+    float: left;
+ 
+    }
+
+    .moneycontainer {
+    float: right;
+    }
+
+    .starsdiv {
+        float: right;
     }
 
 
     .stars-outer {
-        position: relative;
-        display: inline-block;
+      position: relative;
+      display: inline-block;
+       
     }
-    
     .stars-inner {
         position: absolute;
         top:0;
@@ -620,17 +690,28 @@ td {
         color: #f8ce0b;
         font-weight: 900;
     }
-/* 
-.stars {
+    
+.cartcontainer {
+margin-top: 15px;
+float: left;
+}
+
+.cartcontainer button {
     float: right;
-    color: #ffba00;
-} */
+    margin:0px;
+    margin-left: 70px;
+}
+
+.cartcontainer button:hover {
+    background-color: black;
+}
 
 .card-body {
-    margin-bottom: 20px;
     height: 100px;
     width: 340px;
+    padding-bottom: 150px;
 }
+
 
 
 .booksfooter {
@@ -639,7 +720,7 @@ td {
     margin-bottom: 100px;
     margin-top: 35px;
     padding-left: 322px;
-    padding-top: 12px;
+    padding-top: 30px;
 }
 
 

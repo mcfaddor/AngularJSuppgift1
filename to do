@@ -1,0 +1,11 @@
+skapa components, med include.
+
+
+
+
+    <div ng-include="headerComponent"></div> 
+    <div ng-view></div> 
+    <div ng-include="footerComponent"></div> 
+
+
+    

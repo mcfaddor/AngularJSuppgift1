@@ -1,24 +1,51 @@
+<div class="cardcontainer">
 
-    <div class="cardcontainer">
+    <div class="card-deck"
+        data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
+        <div class="card">
 
-        <div class="card-deck" data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
-            <div class="card">
+            <img data-ng-src="{{ product.image_urls }}">
 
-                <img data-ng-src="{{ product.image_urls }}">
-
-                <div class="card-body">
+            <div class="card-body">
+                <div class="titlecontainer">
                     <h5>{{ product.productname }}</h5>
                     <p>{{ product.author }}</p>
-                    <span class="money">
-                        <p>{{ product.price }} kr</p>
-                    </span> 
-                    <div class="stars-outer ml-5">
-                        <div class="stars-inner" ng-style="{ 'width': rating(product.rating) }"></div>
-                    </div>
                 </div>
 
+
+
+                <div class="starscontainer">
+                    <div class="stars-outer">
+                        <div class="stars-inner" data-ng-style="{ 'width': rating(product.rating) }"></div>
+                    </div>
+
+                </div>
+                <div class="moneycontainer">
+                    <td>
+                        <span class="money">
+                            <p>{{ product.price }} kr</p>
+                        </span>
+                    </td>
+
+                </div>
+
+
+                <div class="cartcontainer">
+
+                    <td>
+                        <input class="quantity" type="number" name="quantity" id="quantity" ng-model="product.quantity">
+                    </td>
+                    <td class="pt-3">{{product.price * product.quantity}} Kr</td>
+
+                    <td><button class="btn btn-sm btn-success" ng-click="addItem(product)">Add to Cart</button></td>
+                </div>
             </div>
+
+
+
         </div>
 
+        
     </div>
 
+</div>

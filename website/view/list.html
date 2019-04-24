@@ -1,49 +1,70 @@
-    <table>
-            <thead>
-                    <tr>
-                        <th class="pointer" ng-click="sortData('image')">
-                            Image 
-                            <div ng-class="getSortClass('image')"></div> 
-                        </th>
-                        <th class="pointer" ng-click="sortData('title')">
-                             Title  
-                            <div ng-class="getSortClass('title')"></div>
-                        </th>
-                        <th class="pointer" ng-click="sortData('author')">
-                                Author
-                               <div ng-class="getSortClass('author')"></div>
-                           </th>
-                        <th class="pointer" ng-click="sortData('category')">
-                            Category
-                            <div ng-class="getSortClass('category')"></div>
-                        </th>
-                        <th class="pointer" class="center-text" ng-click="sortData('price')">
-                            Price
-                            <div ng-class="getSortClass('price')"></div>
-                        </th>
-                        <th class="pointer"  ng-click="sortData('instock')">
-                            In stock
-                            <div ng-class="getSortClass('instock')"></div>
-                        </th>
-                        <th class="pointer"  ng-click="sortData('rating')">
-                            Rating
-                            <div class="stars-inner" ng-click="{ 'width': rating(product.rating) }"></div>
-                        </th>
-                    </tr>
+<table>
+    <thead>
+        <tr>
+            <th class="pointer" ng-click="sortData('image')">
+                Image
+                <div ng-class="getSortClass('image')"></div>
+            </th>
+            <th class="pointer" ng-click="sortData('title')">
+                Title
+                <div ng-class="getSortClass('title')"></div>
+            </th>
+            <th class="pointer" ng-click="sortData('author')">
+                Author
+                <div ng-class="getSortClass('author')"></div>
+            </th>
+            <th class="pointer" ng-click="sortData('category')">
+                Category
+                <div ng-class="getSortClass('category')"></div>
+            </th>
+            <th class="pointer" class="center-text" ng-click="sortData('price')">
+                Price
+                <div ng-class="getSortClass('price')"></div>
+            </th>
+            <th class="pointer" ng-click="sortData('instock')">
+                In stock
+                <div ng-class="getSortClass('instock')"></div>
+            </th>
 
-                    <div ></div>
+            <th class="pointer" ng-click="sortData('rating')">
+                Rating
+                <div class="stars-inner" ng-click="{ 'width': rating(product.rating) }">
 
-                </thead>
-        <tbody>
-            <tr data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
-                <td><img src="{{ product.image_urls }}" class="card-img-top" alt=""></td>
-                <td>{{ product.productname }}</td>
-                <td>{{ product.author }}</td>
-                <td>{{ product.category | uppercase }}</td>
-                <td>{{ product.price | currency: "KR " }}</td>
-                <td>{{ product.instock | number }}</td>
+                </div>
 
-            </tr>
-        </tbody>
-    </table>
+            </th>
 
+
+            <th class="pointer" ng-click="sortData('rating')">
+
+                </div>
+
+            </th>
+
+        </tr>
+
+        <div></div>
+
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="product in products | filter: searchText | orderBy:sortColumn | limitTo:rowLimits">
+            <td><img src="{{ product.image_urls }}" class="card-img-top" alt=""></td>
+            <td>{{ product.productname }}</td>
+            <td>{{ product.author }}</td>
+            <td>{{ product.category | uppercase }}</td>
+            <td>{{ product.price | currency: "KR " }}</td>
+            <td>{{ product.instock | number }}</td>
+
+            
+
+            <td>
+                <div class="stars-outer">
+                    <div class="stars-inner" data-ng-style="{ 'width': rating(product.rating) }"></div>
+                </div>
+                <span class="number-rating"> {{product.totalratings}} st omdömen</span>
+            </td>
+            <td><button class="btn btn-sm btn-success" ng-click="addItem(product)">Add to Cart</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
