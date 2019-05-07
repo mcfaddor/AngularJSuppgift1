@@ -119,6 +119,10 @@ body {
     background-color: #ff8155;
 }
 
+.sectionsSquares i {
+    font-size: 20px;
+}
+
 .mailinfo .dropdown-menu {
     float: left;
     width: 500px;
@@ -266,6 +270,15 @@ body {
     border: none;
 }
 
+
+
+.amount {
+    font-size: 12px; 
+    font-weight:normal;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+}
 
 .totalprice {
     text-align: right;
@@ -450,6 +463,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.fas .fa-shopping-cart{
+    font-size: 32px;
+}
+
+
 
 .PictureMenuRight {
     display: flex;
