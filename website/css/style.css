@@ -270,8 +270,6 @@ body {
     border: none;
 }
 
-
-
 .amount {
     font-size: 12px; 
     font-weight:normal;
@@ -297,8 +295,6 @@ body {
     padding: 0;
 }
 
-
-
 .shoppingcontainer table {
     width: 766px;
     height: 100px;
@@ -311,10 +307,7 @@ body {
     width: 57px;
 }
 
-
-
 /* ------------------ SECTION 3 STARTS HERE ------------------ */
-
 
 .purplecontainer {
     position: relative;
@@ -337,7 +330,6 @@ body {
     font-family: 'Rubik';
     letter-spacing: 4px;
     margin-bottom: 20px;
-    
 }
 
 .purplecontainer h1 {
@@ -352,9 +344,7 @@ body {
     font-size: 16px;
 }
 
-
 /* ------------------ SECTION 4 STARTS HERE ------------------ */
-
 
 .infoboxSection {
     
@@ -381,7 +371,6 @@ body {
     margin-right: 12px;
 }
 
-
 .infoboxText {
 
     height: 100px;
@@ -396,9 +385,6 @@ body {
 .infoboxText p {
     font-family: "Gilroy Light";
 }
-
-
-
 
 /* ------------------ SECTION 5 STARTS HERE ------------------ */
 
@@ -434,13 +420,11 @@ body {
     cursor: pointer;
 }
 
-
 .menubuttons img {
     display: block;
     margin: 15px auto;
     color: #fff;
 }
-
 
 #stripes {
     position: relative;
@@ -468,8 +452,6 @@ body {
     font-size: 32px;
 }
 
-
-
 .PictureMenuRight {
     display: flex;
    width: 700px;
@@ -485,7 +467,6 @@ body {
     font-size: 14px;
     
 }
-
 
 #sortColumnText {
     font-family: 'Rubik';
@@ -571,11 +552,7 @@ body {
     color:#cccccc;
 }
 
-
-
 /* ------------------ SECTION 6 STARTS HERE ------------------ */
-
-
 
 table {
     border-collapse: collapse;
@@ -602,7 +579,6 @@ td {
     margin: 40px 15px;
     font-size: 1.1em;
 }
-
 
 /* ------------------ S  ------------------ */
 
@@ -642,7 +618,6 @@ td {
     height: 390px;
 }
 
-
 .card h5 {
     color: #0e1b33;
     padding-top: 15px;
@@ -680,7 +655,6 @@ td {
     .starsdiv {
         float: right;
     }
-
 
     .stars-outer {
       position: relative;
@@ -731,8 +705,6 @@ float: left;
     padding-bottom: 150px;
 }
 
-
-
 .booksfooter {
     background-color: #fff;
     height: 100px;
@@ -741,7 +713,6 @@ float: left;
     padding-left: 322px;
     padding-top: 30px;
 }
-
 
 .numberbutton {
     border: none;
@@ -770,9 +741,6 @@ float: left;
 }
 
 
-
-
-
 /* ------------------ SECTION 7 STARTS HERE ------------------ */
 
 .footer {
@@ -791,7 +759,6 @@ float: left;
     height: 609px;
     margin: 0px auto;
 }
-
 
 .section1 {
     width: 393px;
@@ -822,7 +789,7 @@ float: left;
 .section1 ul {
     list-style-type: none;
     padding: 0px;
-  }
+}
 
   .section1 li {
     position: relative;
@@ -872,8 +839,6 @@ float: left;
     padding-left: 6px;
     font-family: 'Rubik';
     font-weight: bolder;
-    
-    
 }
 
 .section2 h4 {
@@ -889,9 +854,6 @@ float: left;
     color: #A9B2C0;
     text-decoration: none;
 }
-
-
-
 .dots {
     margin-left: 5px;
     color: #ff8155;
@@ -906,12 +868,10 @@ table {
     height: 240px;
 }
 
-
 .section3 {
     width: 393px;
     height: 610px;
 }
-
 
 .newsfeedcontainer1 {
     display: flex;
@@ -924,7 +884,6 @@ table {
     width: 110px;
     height: 90px;
 }
-
 
 .footerpicturetext {
     width: 100%;
@@ -939,8 +898,6 @@ table {
     font-family: 'Rubik';
     font-weight: bolder;
 }
-
-
 
 .section3 h5 {
     color: #fff;

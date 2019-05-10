@@ -4,7 +4,6 @@ var app = angular
 
 app.run(function ($rootScope, $cookies) {
 
-
     var storedCart = $cookies.getObject('savecookies');
 
     var expireDate = new Date();
@@ -16,11 +15,7 @@ app.run(function ($rootScope, $cookies) {
         $rootScope.cart = [];
     }
 
-
-
 })
-
-
 
 app.config(['$routeProvider', function ($routeProvider) {
 
@@ -40,19 +35,15 @@ app.config(['$routeProvider', function ($routeProvider) {
 
 }]);
 
-
 app.controller("productController", function ($rootScope, $http, $cookies) {
 
     $rootScope.cart = [];
 
-    
     if ($cookies.getObject("shoppingcart") !== null) {
         $rootScope.cart = $cookies.getObject("shoppingcart");
         tempcart = $cookies.getObject("shoppingcart");
     }
     var tempcart = [];
-
-
 
     const starsTotal = 5;
 
@@ -67,14 +58,11 @@ app.controller("productController", function ($rootScope, $http, $cookies) {
         });
     };
 
-
     $rootScope.rating = function (input) {
         return `${Math.round(((input / starsTotal) * 100) / 10) * 10}%`;
     }
 
     $rootScope.emptycart = "Your cart is empty maddafakka";
-
-
 
     var cookieExp = new Date();
     cookieExp.setDate(cookieExp.getDate() + 7);
@@ -131,10 +119,7 @@ app.controller("productController", function ($rootScope, $http, $cookies) {
         return quantity;
     }
 
-
 });
-
-
 
 
 $('#myModal').on('shown.bs.modal', function () {
